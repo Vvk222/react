@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Decrement Buttons</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #counter {
+            font-size: 20px;
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="decrement" class="button">-</button>
+        <input type="text" id="counter" value="0" readonly>
+        <button id="increment" class="button">+</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const counterElement = document.getElementById('counter');
+            const incrementButton = document.getElementById('increment');
+            const decrementButton = document.getElementById('decrement');
+        
+            let counterValue = 0;
+        
+            incrementButton.addEventListener('click', () => {
+                counterValue++;
+                counterElement.value = counterValue;
+            });
+        
+            decrementButton.addEventListener('click', () => {
+                counterValue--;
+                counterElement.value = counterValue;
+            });
+        });
+    </script>
+</body>
+</html>

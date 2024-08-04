@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>program 5</title>
+  </head>
+  <body>
+    <script>
+      function calculator(a, b) {
+        const add = a + b;
+        const sub = a - b;
+        const mul = a * b;
+        const div = a / b;
+        return [add, sub, mul, div];
+      }
+      const [add, sub, mul, div] = calculator(10, 5);
+      document.write("<p> Sum: " + add + "</p>");
+      document.write("<p> Sub: " + sub + "</p>");
+      document.write("<p> Mul: " + mul + "</p>");
+      document.write("<p> Div: " + div + "</p>");
+    </script>
+  </body>
+</html>

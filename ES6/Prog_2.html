@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program 2</title>
+  </head>
+  <body>
+    <script>
+      class car {
+        constructor(name) {
+          this.brand = name;
+        }
+        present() {
+          return " I have a " + this.brand;
+        }
+      }
+      const mycar = new car("Ford");
+      document.write(mycar.present());
+    </script>
+  </body>
+</html>
